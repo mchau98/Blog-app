@@ -79,6 +79,16 @@ $lightGreen: #b9e7e7;
           align-items: center;
           gap: 10px;
 
+          .link {
+            text-decoration: none;
+            color: inherit;
+
+            &:focus,
+            &:active {
+              color: teal;
+            }
+          }
+
           h6 {
             font-size: 16px;
             font-weight: 300;
