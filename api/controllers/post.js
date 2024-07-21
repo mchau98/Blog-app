@@ -25,7 +25,6 @@ export const getPost = (req, res) => {
 };
 
 export const addPost = (req, res) => {
-  res.json("from controller");
   const token = req.cookies.access_token;
   if (!token) return res.status(401).json("Not authenticated!");
 
@@ -70,7 +69,6 @@ export const deletePost = (req, res) => {
 };
 
 export const updatePost = (req, res) => {
-  res.json("from controller");
   const token = req.cookies.access_token;
   if (!token) return res.status(401).json("Not authenticated!");
 
